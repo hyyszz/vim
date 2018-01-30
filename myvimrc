@@ -1,0 +1,4 @@
+if filereadable(expand("$VIM/vimrc.vundles"))
+	source $VIM/vimrc.vundles
+endif
+
