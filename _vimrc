@@ -1,6 +1,9 @@
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
+if filereadable(expand("$VIM/myvimrc"))
+	source $VIM/myvimrc
+endif
 
 set diffexpr=MyDiff()
 function MyDiff()
